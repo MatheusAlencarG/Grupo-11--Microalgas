@@ -49,7 +49,7 @@ select * from cadastro where nome like "_o%";
 create table sensores(
 idSensor int primary key auto_increment,
 container int
-);
+); 
 
 insert into sensores values
 (null,12),(null,22),(null,43),(null,02),(null,16),
