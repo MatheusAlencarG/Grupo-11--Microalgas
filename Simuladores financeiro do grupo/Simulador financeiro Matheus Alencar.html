@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulador financeiro</title>
+</head>
+<body>
+
+    <center>
+
+
+    <h2>Simulador financeiro Matheus Alencar</h2> <br>
+
+
+    <h3 style="color: green;">Com o nosso projeto</h3> <br> 
+    Valor investido: <input id="valor_investido1"> <br> <br>
+
+    <h3 style="color: red;">Com outros projetos do mercado</h3> <br>
+    Valor investido: <input id="valor_investido2"> <br> <br>
+
+    <button onclick="calcular()">Calcular valores</button> <br> <br>
+
+    Retorno com o nosso projeto: <span id="retorno1"></span> <br>
+    Retorno em outros projetos do mercado: <span id="retorno2"></span> <br>
+    Diferença entre os projetos: <span id="span_diferenca"></span>
+    
+
+    </center>
+
+</body>
+</html>
+
+<script>
+
+    function calcular() {
+        var soma1 = valor_investido1.value * 2.10;
+        var soma2 = valor_investido2.value * 1.30;
+        var soma3 = Number(soma1) - Number(soma2);
+        retorno1.innerHTML = `<b style="color: green">R$${soma1} Reais</b>`;
+        retorno2.innerHTML = `<b style="color: red">R$${soma2} Reais</b>`;
+        span_diferenca.innerHTML = `<b style="color: red">R$${soma3} Reais</b>`;
+    }
+
+</script>
