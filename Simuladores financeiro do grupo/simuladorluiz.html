@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <center>
+
+
+    <h2 class="titulo">Simulador financeiro Luiz Berto</h2> <br>
+
+
+    
+   <h3 class="quadro1">hectar de microalga produzida: <input id="custo" placeholder="valor"> <br> <br></h3> 
+   <h3 class="quadro2">barril de petróleo produzido: <input id="custo2" placeholder="valor"> <br> <br></h3> 
+    
+ 
+
+    <button onclick="calcular()">Calcular valores</button> <br> <br>
+<div class="resultados">
+    custo total biocombustiveis: <span id="retorno1"></span> <br>
+    custo total combustivel fóssil: <span id="retorno2"></span> <br>
+    Economia de: <span id="span_diferenca"></span></div>
+    
+
+    </center>
+
+</body>
+</html>
+
+<script>
+
+    function calcular() {
+        var soma1 = custo.value * 15;
+        var soma2 = custo2.value * 17;
+        var soma3 = Number(soma2) - Number(soma1);
+        retorno1.innerHTML = `<b style="color: green">R$${soma1} Reais</b>`;
+        retorno2.innerHTML = `<b style="color: red">R$${soma2} Reais</b>`;
+        span_diferenca.innerHTML = `<b style="color: red">R$${soma3} Reais</b>`;
+    }
+
+</script>

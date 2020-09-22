@@ -1,0 +1,30 @@
+.quadro1{
+    background-color: aqua;
+    margin: auto;
+    font-family: sans-serif;
+    width: 50%;
+
+}
+
+.quadro2
+{
+    background-color: red;
+    font-family: sans-serif;
+    margin: auto;
+    width: 50%;
+}
+
+.resultados{
+    background-color: #ffd000;
+    margin: auto;
+    font-family: sans-serif;
+    width: 50%;
+}
+
+.titulo{
+    font-family: sans-serif;
+    margin: auto;
+    width: 50%;
+    background-color: royalblue;
+    
+}
