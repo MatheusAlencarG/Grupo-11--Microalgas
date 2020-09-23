@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="./icone.png">
+    <link rel="stylesheet" href="style.css">
+    <title>Simulador Financeiro</title>
+</head>
+<body>
+    <h1>SIMULADOR FINANCEIRO</h1>
+<div class="caixa">
+    <input placeholder="Informe Quantidade de Hectares" id="in_valor1" type="number">
+    <br><br>
+    <button onclick="calcular()">calcular</button>
+    <div id="divresultado"></div>
+</div>
+</body>
+</html>
+<script>
+function calcular(){
+    var num = in_valor1.value;
+    var soja =  872;  
+    var contasoja =  872 * num;
+    var conta = ((soja * 18) * num);
+    var diferenca = conta - contasoja;
+    
+    divresultado.innerHTML = `Óleo de microalgas rende R$${conta.toFixed(2)} em ${num}HA<br><br>
+    Enquanto o Óleo de Soja rende R${contasoja.toFixed(2)} em ${num}HA<br><br>
+    A diferença de lucro entre eles é R$${diferenca.toFixed(2)}`;
+}
+</script>

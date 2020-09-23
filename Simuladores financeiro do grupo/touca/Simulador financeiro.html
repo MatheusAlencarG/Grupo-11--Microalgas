@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Simulador Financeiro</title>
+    <link rel="shortcut icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAY1BMVEX///8DAQQAAAAwMDBhYWHc3NyGhoa0tLTo6OjCwsKlpaWWlpbPz8/09PQcGx3S0tJ1dHU5ODmvrq9rams/P0Du7u5SUVJbWlvZ2NkpKCo7OjtFRUaDgoPi4uK7u7tmZmaPjo+PH8CIAAADLElEQVR4nO3d3VbaQBRAYRhUKBYCCSQqCLz/U5bQrp7OxYzTM8Cc4N7XR1Y+iWD+R6OUtnWzWY4ttdw09TZp2VOqWtdXGuV1WaLu7Sq+RWMM97ezcXUF4OzdKnDcG9fZq+rMsK/PuUzi4sM28Ezc5QlX1oFn4j4H+Gx8He1z7jND2NkHnolPeuBiCMDzm6gXHgYhHLuDWjiAz5m+jO/9diDCVi1ce0JnKW/B1mrh5N8XcjP161y/mbdkE/XrICwXwtQQlgthagjLhTA1hOVCmBrCciFMDWG5EKaGsFwIU0NYLoSpISwXwtQQlgthagjLhTA1hOVCmBrCciFM7bsJr3fyf37bmwi7Jzt1txAaPq/tWkKzIURoP4QI7YcQof0QIrQfQoT2Q4jQfggR2g8hQvvdSJi8R/omk3cQuvmPcEfvqMJLZPLFmzxGJueRZbmNMHZDEX+5p5HJqf+7iEx+3l34HPm5WwifEapCGAqhhFBCqAthKIQSQgmhLoShEEoIJYS6EIZCKCGUEOpCGAqhZFmYvs87dh/jQ7Lw/vu8T/NgtX81xCo8Offuxey6Ojx5urfw8Y89WQohQvshRGg/hAjth1ApfPj/S93+NZz3bBPXRCYbb7KNTO7ZPlT1vbfxESL8HUIJoS6EoRBKCCWEuhCGQighlBDqQhgKoYRQQqgLYSiEEkLJ8jlRQ70OeFr9DFX5RyNeI5Ov/hGOyOT03sLHP/ZkKYQI7YcQof0QIrQfQqXw4f8vdW344RNH/7kYu8hzKnbe5OQYnmxNbR96V3/8xzlRp8gk50TpQhgKoYRQQqgLYSiEEkIJoS6EoRBKCCWEuhCGQighlBDqQhgKoYRQQqgrJqwWwUbeddeuDk8uam9yPwpPVvcWPv6xJ0shRGg/hAjthxCh/RAitF+GcD0Q4VotjJxLZinXqoWrgQhXauFhIMLYuYFfFNuytpNb6IVPQxC6Tg8cfQ7gTXTR3X5fFrlboZUyPmcu7awT3UfGX2Hf1vh66twsD3gmrg0bnXvPBo76732rRueazFX0T2/dFzudC3RZora6iq9vWzebZWmU13LT1NukZf8FvNGWmcBCQu8AAAAASUVORK5CYII=">
+    <link rel="stylesheet"  href="style.css">
+</head>
+
+<body>
+<div class="title"><h1>Simulador financeiro</h1></div>
+    <div class="container">
+            <div class="formbox">
+                    <input id="valor1" placeholder="informe a quantidade de hectares de óleo de soja">
+                    <br><br>
+                    <button onclick="calcular()">Calcular</button>
+                    <br><br>
+                    <div id="divresultado"></div>
+        </div>
+    </div>
+</body>
+</html>
+<script>
+ function calcular(){
+// font https://www.ecodebate.com.br/2008/12/22/em-um-hectare-microalgas-para-biocombustiveis-produzem-100-vezes-mais-oleo-que-a-soja/
+//https://agroemdia.com.br/2019/06/27/rs-custo-de-producao-da-soja-e-de-r-338-mil-ha-e-do-milho-r-458-mil/
+
+    var soja = valor1.value * 872;  
+    var alga = soja * 17;
+    var renda = alga - soja;
+
+    divresultado.innerHTML = `Óleo de soja rende R$ ${soja.toFixed(2)} em ${valor1.value}ha<br><br>
+    Enquanto o óleo de microalgas rende <br>R$ ${alga.toFixed(2)} em ${valor1.value}ha<br><br>
+    O que da uma diferença de lucro de R$ ${renda.toFixed(2)}`;
+}
+</script>

@@ -1,0 +1,44 @@
+body{
+    background: url(./Microalgas-1.1.png);
+    background-size: cover;
+    margin: 0;
+}
+h1{
+    color: rgb(3, 110, 160);
+    margin-top: 100px;
+    text-align: center;
+    font-size: 80px;
+}
+.caixa{
+    border: rgb(18, 131, 18) solid;
+    background: rgb(16, 204, 16);
+    text-align: center;
+    margin-left: 500px;
+    height: 350px;
+    width: 330px;
+}
+.caixa input {
+    text-align: right;
+    margin-top: 100px;
+    width: 220px;
+    border:  rgb(138, 138, 138) solid; 
+    height: 25px;
+    color: rgb(3, 110, 160);
+    border-radius: 15px;
+}
+.caixa button{
+    border-radius: 50px;
+    height: 40px;
+    width: 113px;
+    border: rgb(138, 138, 138) solid;
+    background: #000000;
+    color: #fff;
+}
+.caixa button:hover{
+    transition: 0.7s;
+    color: #000;
+    background: rgb(18, 131, 18);
+}
+.caixa div{
+    margin-top: 5px;
+}
