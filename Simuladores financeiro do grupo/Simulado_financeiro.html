@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Valor que gostaria de investir na simulação: <input type="" id="in_valor1">
+    <br>
+ <button onclick="simular()">Simular</button>
+ <div id="simulador">
+
+ </div>
+ <button onclick="simular2()">Simular fora do projeto</button>
+  <div id="simulador2">
+
+ </div>
+ <button onclick="dife()">Diferença</button>
+ <div id="dif">
+
+ </div>
+
+ <h3> <b>Nosso projeto conta com vários especialistas na area que trazem mais eficiencia para o cultivo de microalgas utilizando varios sensores custo beneficio trazendo mais lucro para seu investimento</b></h3>
+
+</body>
+</html>
+<script>
+ function simular(){
+    var divi = in_valor1.value * 0.17;
+    simulador.innerHTML = `<h2>seu rendimento anual no nosso projeto é: ${divi}R$ REAIS (17%)<br></h2>`;
+ }
+ function simular2(){
+    var divi2 = in_valor1.value * 0.10;
+    simulador2.innerHTML = `<br><h2>seu rendimento anual fora do nosso projeto é: ${divi2}R$ REAIS (10%)</h2>`;
+    
+
+ }
+ function dife(){
+     var div3 = in_valor1.value * 0.07;
+     dif.innerHTML = '<spam style = "color: red;"> ' + `<br><h2> a diferença vai ser de: ${div3}R$ REAIS (7%)</h2>`;
+ }
+ 
+</script>
