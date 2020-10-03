@@ -1,44 +1,146 @@
 body{
-    background: url(./Microalgas-1.1.png);
-    background-size: cover;
+    /* background: url(./Microalgas-1.1.png); */
+    /* background-image: url(https://www.colegioweb.com.br/wp-content/uploads/2015/04/210.jpg); */
     margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
 }
-h1{
-    color: rgb(3, 110, 160);
-    margin-top: 100px;
-    text-align: center;
-    font-size: 80px;
+.navbar{
+    height: 100px;
+    color: white;
+    background: #1dbd55;
+    border-bottom: rgb(0, 0, 0) 3px solid;
+}
+.logo{
+    height: 100px;
+}
+.container{
+    width: 80%;
+    margin: auto;
+}
+h2{
+    margin-top: -73px;
+    margin-bottom: -15px;
+}
+.ul_links{
+    float: right;
+    margin-top: -65px;
+    margin-right: 500px;
+}
+li{
+    float: left;
+    list-style: none;
+    margin: 5px;
+}
+.ul_login{
+    float: right;
+    margin-top: -65px;
+}
+.login{
+    margin-right: -400px;
+}
+.li_cadastro{
+    color: #24292e;
+    background: #24292e;
+    padding: 15px 5px;
+    margin-top: -10px;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+.li_cadastro:hover{
+    transition: 0.5;
+    background: #4e555e;
+    color: white;
+}
+.li_login{
+    padding-right: 5px;
+}
+.caixa span{
+    color: rgb(0, 0, 0);
+}
+input{
+    margin-top: 8px;
+    height: 25px;
+    background-image: url(searchmagnifierinterfacesymbol1_79893.png);
+    background-position: left 7px center;
+    background-size: 17px;
+    background-repeat: no-repeat;
+    padding-left: 30px;
+    outline: none;
+    border: none;
+    border-bottom: #4e555e solid 2px;
 }
 .caixa{
-    border: rgb(18, 131, 18) solid;
-    background: rgb(16, 204, 16);
+    /* border: #24292e solid; */
+    background: #ffffff;
     text-align: center;
-    margin-left: 500px;
-    height: 350px;
-    width: 330px;
+    margin: 3% 30% 0 30%;
+    height: 300px;
+    position: relative;
+    border-bottom: gray solid 2px;
 }
-.caixa input {
-    text-align: right;
-    margin-top: 100px;
-    width: 220px;
-    border:  rgb(138, 138, 138) solid; 
-    height: 25px;
-    color: rgb(3, 110, 160);
-    border-radius: 15px;
+button{
+    height: 30px;
+    border-radius: 7px;
+    background: #1dbd55;
+    font-size: 15px;
+    cursor: pointer;
+    outline: none;
+    color: rgb(255, 255, 255);
+    border: none;
+    transition: 0.5s;
 }
-.caixa button{
-    border-radius: 50px;
+button:hover{
+    background: #1ed760;
+    transition: 0.5s;
+}
+#resultado{
+    background: white;
+    margin: 5% 15%;
+    min-width: 120px;
+    display: none;
+}
+footer{
+    padding-top: 114px;
+}
+.footer{
+    background: #24292e;
+    height: 100px;
+    width: 100%;
+    position: absolute;
+    border-top: black solid 2px;
+}
+a{
+    text-decoration: none;
+    color: #ffffff;
+}
+.facebook{
     height: 40px;
-    width: 113px;
-    border: rgb(138, 138, 138) solid;
-    background: #000000;
-    color: #fff;
+    padding-left: 5px;
 }
-.caixa button:hover{
-    transition: 0.7s;
-    color: #000;
-    background: rgb(18, 131, 18);
+.insta{
+    height: 40px;
+    padding-left: 5px;
 }
-.caixa div{
-    margin-top: 5px;
+.twitter{
+    height: 40px;
+    padding-left: 5px;
+}
+.gmail{
+    height: 40px;
+    padding-left: 5px; 
+}
+.footer span{
+    padding-left: 5px;
+    color: #eeeaea;
+}
+.footer_center{
+    text-align: center;
+    margin-top: -80px;
+    color: gray;
+    font-size: 15px;    
+}
+.bandtec{
+    height: 70px;
+    float: right;
+    margin-top: -35px;
 }
