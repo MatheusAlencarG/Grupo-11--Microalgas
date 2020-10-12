@@ -1,0 +1,158 @@
+body{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.navbar{
+    background: #313131;
+    height: 90px;
+    border-bottom: #42b72a 3px inset;
+}
+.container{
+    height: 90px;
+    width: 90%;
+    margin: auto;
+}
+.container img{
+    height: 90px;
+    float: left;
+}
+.container h2{
+    float: left;
+    letter-spacing: 1px;
+    color: white;
+    margin-left: 5px;
+    margin-top: 30px;
+}
+.menu{
+    float: right;
+    margin-right: 350px;
+    margin-top: 30px;
+}
+.menu li{
+    float: left;
+    list-style: none;
+    margin: 5px;
+    color: white;
+}
+.login{
+    float: right;
+    margin-top: -43px;
+}
+.login li{
+    float: left;
+    list-style: none;
+    margin: 5px;
+    color: white;
+    transition: 0.2s;
+}
+.login li:hover{
+    transition: 0.2s;
+    color: rgb(216, 216, 216);
+}
+.login .cadastro{
+    transition: 0.2s;
+}
+.login .cadastro:hover{
+    transition: 0.2s;
+    color: #42b72a;
+}
+.quem{
+    background-image: url(edit.jpg);
+    height: 400px;
+    background-size: cover;
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+}
+.opacidade{
+    width: 100%;
+    height: 400px;
+    background: rgba(255, 255, 255, 0.5);
+}
+.quem h1{
+    padding-top:  10%;
+    text-align: center;
+    margin: 0;
+    font-size: 50px;
+    color: #42b72a;
+    font-weight: bolder;
+}
+.quem p{
+    text-align: center;
+    font-size: 25px;
+    font-weight: bolder;
+}
+.sensores{
+    height: 400px;
+    border-top: #42b72a 3px solid;
+    background: #313131;
+}
+.listra img{
+    height: 250px;
+    float: right;
+}
+.listra h1{
+    font-size: 35px;
+    color: white;
+    text-align: center;
+}
+.listra p{
+    float: left;
+    width: 70%;
+    font-size: 25px;
+    margin: 0;
+    color: #42b72a;
+}
+.algas{
+    height: 400px;
+    border-top: #42b72a 3px solid;
+    background-image: url(algas.jpeg);
+}
+.opacidade2{
+    height: 400px;
+    background: rgba(0, 17, 4, 0.63);
+}
+.opacidade2 h1{
+    margin: 0;
+    font-size: 35px;
+    padding-top: 25px;
+    color: #42b72a;
+    text-align: center;
+}
+.opacidade2 p{
+    color: white;
+    font-size: 20px;
+}
+.opacidade2 span{
+    color: rgb(163, 243, 152);
+}
+footer{
+    height: 133px;
+    width: 100%;
+    background: #313131;
+}
+footer p{
+    padding-top: 20px;
+    margin: 0;
+    padding-bottom: 10px;
+    color: white;
+}
+footer span{
+    color: white;
+}
+.bandtec{
+    height: 30px;
+    width: 100%;
+    background: #313131;
+}
+.span_footer{
+    margin-left: 38%;
+    color: #888787;
+}
+.imagem{
+    float: right;
+    margin-top: -60px;
+}
+.imagem img{
+    height: 30px;
+    margin: 3px;
+}
