@@ -13,6 +13,10 @@ a {
   margin: auto;
 }
  /* Menu da página */
+ .current{
+   color: white;
+   font-weight: bold;
+ }
 .menu {
   background-color: #2E8B57;
   color: white;
@@ -36,7 +40,7 @@ a {
   margin-top: 28px;
 }
 .menu li:hover {
-  color: black;
+  color: white;
   font-weight: bold;
 }
 .menu img{

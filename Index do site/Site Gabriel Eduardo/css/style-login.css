@@ -11,12 +11,15 @@ a{
 }
 
 /* Menu da página */
+.current{
+  color: white;
+  font-weight: bold;
+}
 .menu {
   background-color: #2E8B57;
   color: white;
   height: 100px;
 }
-
 .menu h1 {
   float: left;
   margin-top: 30px;
@@ -34,7 +37,7 @@ a{
   margin-top: 28px;
 }
 .menu li:hover {
-  color: black;
+  color: white;
   font-weight: bold;
 }
 .menu img{
@@ -182,7 +185,6 @@ text-align: center;
   border-bottom: 1px solid white;
   cursor: pointer;
 }
-
 .copy{
   width: 100%;
   background: #2F4F4F;
@@ -190,7 +192,6 @@ text-align: center;
   height: 50px;
   margin-top: 130px;
 }
-
 .copy p{
   margin-left: 60px;
   text-align: center;
