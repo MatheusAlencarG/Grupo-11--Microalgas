@@ -45,16 +45,9 @@ body{
     color: white;
     transition: 0.2s;
 }
-.login li:hover{
+.login a:hover{
+    color: rgb(192, 190, 190);
     transition: 0.2s;
-    color: rgb(216, 216, 216);
-}
-.login .cadastro{
-    transition: 0.2s;
-}
-.login .cadastro:hover{
-    transition: 0.2s;
-    color: #42b72a;
 }
 .quem{
     background-image: url(edit.jpg);
@@ -87,7 +80,7 @@ body{
     background: #313131;
 }
 .listra img{
-    height: 250px;
+    height: 270px;
     float: right;
 }
 .listra h1{
@@ -105,7 +98,7 @@ body{
 .algas{
     height: 400px;
     border-top: #42b72a 3px solid;
-    background-image: url(algas.jpeg);
+    background-image: url(plata.jpeg);
 }
 .opacidade2{
     height: 400px;
@@ -155,4 +148,8 @@ footer span{
 .imagem img{
     height: 30px;
     margin: 3px;
+}
+a{
+    text-decoration: none;
+    color: white;
 }
