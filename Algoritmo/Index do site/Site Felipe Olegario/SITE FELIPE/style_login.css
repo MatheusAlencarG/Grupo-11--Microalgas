@@ -57,6 +57,11 @@ body{
 }
 .login a{
     text-decoration: none;
+    color: white;
+    transition: 0.2s;
+}
+.login a:hover{
+    transition: 0.2s;
     color: rgb(192, 190, 190);
 }
 
@@ -64,7 +69,7 @@ body{
 
 .fundo{
     background-image: url("./imagens_oceano/branco.jpeg");
-    height: 600px;
+    height: 85%;
     width: 100%;
     background-repeat: no-repeat;
     background-size: cover;
@@ -84,6 +89,10 @@ body{
     text-align: left;
     border-bottom: #42b72a 3px solid;
     font-size: 40px;
+}
+#h3{
+    color: red;
+    display: none;
 }
 .inputs a{
     text-decoration: none;
@@ -119,14 +128,18 @@ body{
 .inputs button{
     height: 29px;
     width: 60px;
-    border-radius: 5px;
+    border-radius: 05px;
     border: #42b72a solid 2px;
     outline: none;
     background: transparent;
 }
-.inputs button:hover{
-    font-weight: bold;
-    cursor: pointer;
-    background: #39a124;
-    color: white;
+footer{
+    height: 20px;
+    background: #313131;
+    position: relative;
+    margin-top: 41%;
+    text-align: center;
+}
+footer span{
+    color: #888787;
 }

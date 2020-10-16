@@ -34,6 +34,13 @@ body{
     margin: 5px;
     color: white;
 }
+.menu a{
+    transition: 0.2s;
+}
+.menu a:hover{
+    color:rgb(192, 190, 190) ;
+    transition: 0.2s;
+}
 .login{
     float: right;
     margin-top: -43px;
@@ -49,8 +56,10 @@ body{
     color: rgb(192, 190, 190);
     transition: 0.2s;
 }
+
+
 .quem{
-    background-image: url(edit.jpg);
+    background-image: url(./imagens/edit.jpg);
     height: 400px;
     background-size: cover;
     background-attachment: scroll;
@@ -62,12 +71,17 @@ body{
     background: rgba(255, 255, 255, 0.5);
 }
 .quem h1{
-    padding-top:  10%;
+    padding-top: 10%;
     text-align: center;
     margin: 0;
     font-size: 50px;
     color: #42b72a;
-    font-weight: bolder;
+    transition: 0.9s;
+}
+.quem h1:hover{
+    font-size: 55px;
+    cursor: pointer;
+    transition: 0.9s;
 }
 .quem p{
     text-align: center;
@@ -84,9 +98,15 @@ body{
     float: right;
 }
 .listra h1{
-    font-size: 35px;
+    font-size: 45px;
     color: white;
     text-align: center;
+    transition: 0.9s;
+}
+.listra h1:hover{
+    font-size: 50px;
+    cursor: pointer;
+    transition: 0.9s;
 }
 .listra p{
     float: left;
@@ -98,7 +118,7 @@ body{
 .algas{
     height: 400px;
     border-top: #42b72a 3px solid;
-    background-image: url(plata.jpeg);
+    background-image: url(./imagens/plata.jpeg);
 }
 .opacidade2{
     height: 400px;
@@ -106,18 +126,25 @@ body{
 }
 .opacidade2 h1{
     margin: 0;
-    font-size: 35px;
+    font-size: 45px;
     padding-top: 25px;
     color: #42b72a;
     text-align: center;
+    transition: 0.9s;
+}
+.opacidade2 h1:hover{
+    font-size: 50px;
+    cursor: pointer;
+    transition: 0.9s;
 }
 .opacidade2 p{
     color: white;
-    font-size: 20px;
+    font-size: 23px;
 }
 .opacidade2 span{
     color: rgb(163, 243, 152);
 }
+
 footer{
     height: 133px;
     width: 100%;

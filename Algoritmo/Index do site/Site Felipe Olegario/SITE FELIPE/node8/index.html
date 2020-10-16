@@ -1,0 +1,149 @@
+
+<!doctype html>
+<html>
+
+<head>
+	<title>Chart</title>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.min.js"></script>
+	<script src="http://www.chartjs.org/dist/2.7.1/Chart.js"></script>
+	<script src="http://www.chartjs.org/samples/latest/utils.js"></script>
+	<link rel="stylesheet" href="style_chart.css">
+	<style>
+		canvas {
+			-moz-user-select: none;
+			-webkit-user-select: none;
+			-ms-user-select: none;
+		}
+	</style>
+</head>
+
+<body>
+	<header>
+        <div class="navbar">
+            <div class="container">
+                <img src="../imagens/logo.png">
+                <h2>ALGASENSORS</h2>
+                <ul class="menu">
+                    <li><a href="../HOME.html">PAGINA INICIAL</a></li>
+                    <li>SIMULADOR</li>
+                    <li style="color: rgb(192, 190, 190);">GRAFICOS</li>
+                </ul>
+                <ul class="login">
+                    <li><a href="../login.html">LOGIN</a></li>
+                    <li class="cadastro"><a href="../cadastro.html">CADASTRAR</a></li>
+                </ul>
+            </div>
+        </div>
+	</header>
+	
+	<section style="text-align: center;">
+		<h2>Média da temperatura: <label id='average'>0.00</label></h2>
+		<h2>Média Hora: <label id='averageHour'>0.00</label></h2>
+	</section>
+	<section style="width:70%;margin-left: 200px;">
+		<canvas id="chart"></canvas>
+	<section>
+	<script>
+
+		var context = document.getElementById("chart").getContext("2d");
+		context.canvas.width = 500;
+		context.canvas.height = 170;
+        
+        var configuration = {
+			type: 'line',
+			data: {
+				datasets: [{
+					label: "Temperatura x tempo",
+					type: 'line',
+					backgroundColor: ['transparent'],
+					borderColor: ['#42b72a'], 
+				}]
+			},
+			options: {
+				scales: {
+					xAxes: [{
+						//type: 'value',
+						distribution: 'series',
+                        ticks: {
+							beginAtZero:true,
+							maxticksLimit: 5
+                        }
+					}],
+					yAxes: [{
+						scaleLabel: {
+							display: true,
+							labelString: 'Temperatura'
+                        },
+                        ticks: {
+							beginAtZero:true,
+							suggestedMin: 0,
+							suggestedMax: 30
+                        }
+					}]
+				},
+				animation: {
+					duration: 0
+				}
+			}
+        };
+        
+		var chart = new Chart(context, configuration);
+
+        //Função para obter os dados de temperatura do server
+        //Seria mais interessante fazer isso com WebSocket, porém para fins academicos, os dados serão atualizados via HTTP
+        
+        //Esse atributo dentro do contexto serve para saber qual foi o último índice processado, assim eliminado os outros elementos na
+        //hora de montar/atualizar o gráfico
+        this.lastIndexTemp = 0;
+        this.time = 0;
+
+        function get_data(){
+
+            var http = new XMLHttpRequest();
+            http.open('GET', 'http://localhost:3000/api', false);
+            http.send(null);        
+			
+            var obj = JSON.parse(http.responseText);
+			console.log(obj)
+            if (obj.data.length == 0){
+                return;
+            }
+
+            var _lastIndexTemp = this.lastIndexTemp;
+            this.lastIndexTemp = obj.data.length;
+            listTemp = obj.data.slice(_lastIndexTemp);
+
+            listTemp.forEach(data => {
+                //Máximo de 60 itens exibidos no gráfico
+                if (chart.data.labels.length == 10 && chart.data.datasets[0].data.length == 10){
+                    chart.data.labels.shift();
+                    chart.data.datasets[0].data.shift();
+                }
+
+                chart.data.labels.push(this.time++);
+                chart.data.datasets[0].data.push(parseFloat(data));
+                chart.update();
+			});
+			
+			document.getElementById('average').textContent = obj.average;
+			document.getElementById('averageHour').textContent = obj.averageHour;
+		} 
+		
+		get_data();
+
+
+		function sendTemperature(){
+			var http = new XMLHttpRequest();
+            http.open('POST', 'http://localhost:3000/api/sendData', false);
+            http.send(null);
+		}
+
+        setInterval(() => {
+			sendTemperature();
+			get_data();
+        }, 1000);
+
+	</script>
+</body>
+
+</html>

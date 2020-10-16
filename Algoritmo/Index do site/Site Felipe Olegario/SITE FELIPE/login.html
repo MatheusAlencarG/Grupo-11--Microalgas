@@ -17,11 +17,10 @@
                     <li><a href="HOME.html">PAGINA INICIAL</a></li>
                     <li>SIMULADOR</li>
                     <li>GRAFICOS</li>
-                    <li>SENSORES</li>
                 </ul>
                 <ul class="login">
-                    <li><a href="login.html">LOGIN</a></li>
-                    <li class="cadastro">CADASTRAR</li>
+                    <li style="color: rgb(192, 190, 190);">LOGIN</li>
+                    <li class="cadastro"><a href="./cadastro.html">CADASTRE-SE</a></li>
                 </ul>
             </div>
         </div>
@@ -32,19 +31,37 @@
            <div class="opacidade">
             <div class="inputs">
                 <h1>Login</h1>
-                <input type="text" placeholder="E-mail" class="in_email">
+                <span id="h3">Email ou senha estão incorretos</span>
+                <br>
+                <input type="text" placeholder="E-mail" class="in_email" id="in_login">
                 <br><br>
-                <input type="password" placeholder="Senha" class="in_senha">
+                <input type="password" placeholder="Senha" class="in_senha" id="in_chave" onchange="entrar()">
                 <br><br>
-                <button>Entrar</button>
+                <button onclick="entrar()"><a href="#" id="index">Entrar</a></button>
                 <br><br>
                 <a href="#">Esqueceu a senha?</a>
             </div>
            </div>
+        
        </div>
    </main>
  
+   <footer>
+       <section><span class="span_footer">Developed by Algasensor in collaboration Bandtec.</span>
+    </section>
+   </footer>
 </body>
 </html>
 <script>
+    function entrar(){
+        var email = in_login.value;
+        var senha = in_chave.value;
+        if (email == 'felipe.olegario' && senha == '1234') {
+            index.href='./node8/index.html'
+        }else if (email == 'gabriel.eduardo' && senha == '1234'){
+            index.href='./node8/index.html'
+        }else{
+            h3.style.display='block'
+            }
+    }
 </script>
