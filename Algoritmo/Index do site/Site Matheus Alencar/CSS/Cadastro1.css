@@ -1,0 +1,107 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+}
+
+.navbar {
+    background-color: rgb(35, 161, 35);
+    color: black;
+    width: 100%;
+    border-bottom: 4px rgb(6, 94, 6) solid;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    font-weight: bold;
+}
+
+.container {
+    width: 95%;
+    height: 80px;
+    margin: 0 auto;
+	padding: 0px;
+    position: relative;
+}
+
+.container img {
+    width: 100px;
+}
+
+.navbar ul {
+    float: right;
+    text-transform: uppercase;
+}
+
+li {
+    float: left;
+    list-style: none;
+    margin: 17px;
+}
+
+.current {
+    color: white;
+    font-weight: bold;
+}
+
+.banner {
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-image: url(../Imagens/Microalgas-1.1.jpg);
+    position: fixed;
+}
+
+.div_container {
+    background-color: rgb(155, 155, 155);
+    height: 460px;
+    width: 320px;
+    margin-left: 40%;
+    margin-top: 8%;
+    
+}
+
+.div_p p {
+    margin-bottom: 0px;
+    margin-left: 5px;
+    margin-top: 16;
+    
+}
+
+.div_p input {
+    margin-left: 5px;
+    width: 302px;
+    border: none;
+    transition: 0.1s; 
+}
+.div_p input:hover {
+    transition: 0.1s;
+    outline: green solid;
+    border: none;
+}
+
+.div_container img {
+    margin-left: 110px;
+    margin-top: 15px;
+    width: 100px;
+}
+
+.div_container button {
+    margin-top: 30px;
+    margin-left: 127px;
+    cursor: pointer;
+    height: 30px;
+    width: 82px;
+    background: #15883e;
+    color: white;
+    border: none;
+    border-radius: 15px;
+}
+
+.div_container button:hover {
+    transition: 0.1s;
+    background-color: #1db954;
+}

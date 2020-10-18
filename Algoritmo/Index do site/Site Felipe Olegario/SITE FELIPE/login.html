@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOGIN</title>
+    <link rel="stylesheet" href="style_login.css">
+</head>
+<body>
+    <div id="opacidade_master" style="display: block; background-color: white;width: 100%;height: 100%;;">
+    <header>
+        <div class="navbar">
+            <div class="container">
+                <img src="../Grupo-11--Microalgas/Imagens/logo.png">
+                <h2>ALGASENSORS</h2>
+                <ul class="menu">
+                    <li><a href="HOME.html">PAGINA INICIAL</a></li>
+                    <li>SIMULADOR</li>
+                    <li>GRAFICOS</li>
+                </ul>
+                <ul class="login">
+                    <li style="color: rgb(192, 190, 190);">LOGIN</li>
+                    <li class="cadastro"><a href="./cadastro.html">CADASTRE-SE</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+   <main>
+       <div class="fundo">
+           <div class="opacidade">
+            <div class="inputs">
+                <h1>Login</h1>
+                <span id="h3">Email ou senha estão incorretos</span>
+                <br>
+                <input type="text" placeholder="E-mail" class="in_email" id="in_login">
+                <br><br>
+                <input type="password" placeholder="Senha" class="in_senha" id="in_chave" onchange="entrar()">
+                <br><br>
+                <button onclick="entrar()"><a href="#" id="index">Entrar</a></button>
+                <br><br>
+                <a href="#">Esqueceu a senha?</a>
+            </div>
+           </div>
+        
+       </div>
+   </main>
+ 
+   <footer>
+       <section><span class="span_footer">Developed by Algasensor in collaboration Bandtec.</span>
+    </section>
+   </footer>
+</body>
+</html>
+<script>
+    function entrar(){
+        var email = in_login.value;
+        var senha = in_chave.value;
+        if (email == 'felipe.olegario' && senha == '1234') {
+            index.href='./node8/index.html'
+        }else if (email == 'gabriel.eduardo' && senha == '1234'){
+            index.href='./node8/index.html'
+        }else{
+            h3.style.display='block'
+            }
+    }
+</script>

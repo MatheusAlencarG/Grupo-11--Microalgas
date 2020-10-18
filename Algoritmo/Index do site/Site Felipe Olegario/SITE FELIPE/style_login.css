@@ -1,0 +1,145 @@
+
+body{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.navbar{
+    background: #313131;
+    height: 90px;
+    border-bottom: #42b72a 3px inset;
+}
+.container{
+    height: 90px;
+    width: 90%;
+    margin: auto;
+}
+.container img{
+    height: 90px;
+    float: left;
+}
+.container h2{
+    float: left;
+    letter-spacing: 1px;
+    color: white;
+    margin-left: 5px;
+    margin-top: 30px;
+}
+.menu{
+    float: right;
+    margin-right: 350px;
+    margin-top: 30px;
+}
+.menu li{
+    float: left;
+    list-style: none;
+    margin: 5px;
+    color: white;
+}
+.menu a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    transition: 0.2s;
+}
+.menu a:hover{
+    transition: 0.2s;
+    color: rgb(192, 190, 190);
+}
+.login{
+    float: right;
+    margin-top: -43px;
+}
+.login li{
+    float: left;
+    list-style: none;
+    margin: 5px;
+    color: white;
+    transition: 0.2s;
+}
+.login a{
+    text-decoration: none;
+    color: white;
+    transition: 0.2s;
+}
+.login a:hover{
+    transition: 0.2s;
+    color: rgb(192, 190, 190);
+}
+
+
+
+.fundo{
+    background-image: url("./imagens_oceano/branco.jpeg");
+    height: 85%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: scroll;
+    position: absolute;
+}
+.inputs{
+    text-align: center;
+    margin-top: 140px;
+    margin-left: 460px;
+    margin-right: 460px;
+    padding: 20px 50px 20px 50px;
+    background: transparent;
+    box-shadow: 0 8px 4px rgba(250, 249, 249, 0.1),8px 8px 4px rgba(0, 0, 0, 0.116);
+}
+.inputs h1{
+    text-align: left;
+    border-bottom: #42b72a 3px solid;
+    font-size: 40px;
+}
+#h3{
+    color: red;
+    display: none;
+}
+.inputs a{
+    text-decoration: none;
+    color: #42b72a;
+}
+.inputs a:hover{
+    text-decoration: underline;
+}
+.in_email{
+    border: none;
+    height: 20px;
+    border-bottom: #42b72a 2px solid;
+    background: transparent;
+    width: 60%;
+    outline: none;
+    padding-left: 25px;
+    background-image: url(user.png);
+    background-size: 20px;
+    background-repeat: no-repeat;
+}
+.in_senha{
+    border: none;
+    height: 23px;
+    border-bottom: #42b72a 2px solid;
+    background: transparent;
+    width: 60%;
+    outline: none;
+    padding-left: 25px;
+    background-image: url(cadeado.png);
+    background-size: 20px;
+    background-repeat: no-repeat;
+}
+.inputs button{
+    height: 29px;
+    width: 60px;
+    border-radius: 05px;
+    border: #42b72a solid 2px;
+    outline: none;
+    background: transparent;
+}
+footer{
+    height: 20px;
+    background: #313131;
+    position: relative;
+    margin-top: 41%;
+    text-align: center;
+}
+footer span{
+    color: #888787;
+}

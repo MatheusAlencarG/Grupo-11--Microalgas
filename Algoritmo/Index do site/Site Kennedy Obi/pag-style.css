@@ -1,0 +1,39 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0%;
+}
+
+.navbar{
+    background-color: rgba(0, 128, 0, 0.897);
+    height: 100px;
+    width: 10000px;
+
+}
+.navbar h1{
+    float: left;
+    margin-top: 30px;
+    margin-left: 200px;
+}
+.navbar ul{ 
+    float:left;
+    text-transform: uppercase;
+    
+} 
+.navbar li {
+    float: right;
+    list-style: none;
+    margin: 18px;
+    margin-top: 30px;
+    margin-left: 80px;
+}
+.container{
+    height: 100px;
+    width: 80%;
+}
+.diferente{
+    border: #1E90FF solid;
+   height: 50%;
+}
+.quer_entrar{
+    margin-left: auto;
+}
