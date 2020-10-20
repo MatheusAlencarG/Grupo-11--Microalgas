@@ -1,0 +1,87 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Barra valor tempo real</title>
+    <style>
+        canvas {
+            -moz-user-select: none;
+            -webkit-user-select: none;
+            -ms-user-select: none;
+        }
+
+        .gradiente {
+            background: rgb(154,151,204);
+            background: linear-gradient(90deg, rgba(181,179,226,1) 0%, rgba(255,255,255,1) 25%, rgba(232,232,232,1) 50%, rgba(255,255,255,1) 75%, rgba(223,95,86,1) 100%);
+        }
+    </style>
+</head>
+
+<body>
+    
+    Última leitura: <br>
+    <div style="width: 60%;" class="gradiente">
+        <div id="div_posicao" style="margin-left:0%; font-size: 20pt;">
+            <b id="b_leitura">0</b>ºC
+        </div>
+    </div>
+
+    <br>
+    Mínimo: <b id="b_min"></b> <br>
+    Máximo: <b id="b_max"></b> <br>
+
+</body>
+
+</html>
+
+<script>
+
+    // essas 2 funções irão recuperar seus valores do backend futuramente
+    function limiteMaximo() {
+        return 10;
+    }
+
+    function limiteMinimo() {
+        return -15;
+    }
+
+	// esse "sortearTemperatura()" será desnecessário quando usarmos o backend futuramente
+	function sortearTemperatura() {
+        var minimoAbsoluto = Math.abs(limiteMinimo());
+		return (Math.random() * (minimoAbsoluto+limiteMaximo()) - minimoAbsoluto).toFixed(1);
+	}
+
+    function receberNovasLeituras() {
+		setTimeout(() => {
+
+            // jogando o "max" e "min" para a página
+            b_max.innerHTML = limiteMaximo();
+            b_min.innerHTML = limiteMinimo();
+
+            var ajusteLimiteMin = Math.abs(limiteMinimo());
+
+			// esse "novoRegistro" será recuperado do backend futuramente
+			var novoRegistro = {
+				momento: '00:00:00', // tanto faz
+				leitura: Number(sortearTemperatura())
+			};
+
+            // calculo de uma posição de 0 a 100 "entre" os limites min e max
+            var posicao = (novoRegistro.leitura + ajusteLimiteMin) / (limiteMaximo()+ajusteLimiteMin) * 100;
+			
+            // posicionando o texto horizontalmente
+            div_posicao.style.marginLeft = `${posicao}%`;
+            
+            // atualizando o valor da leitura na página
+            b_leitura.innerHTML = novoRegistro.leitura;
+
+		    // função que agenda a recuperação da última leitura para daqui a 3 segundos
+			receberNovasLeituras();	
+
+		}, 3000); // 3000 ms -> 3 segundos
+	}
+
+	// indicando que a função "receberNovasLeituras" será invocada assim que a página carregar
+    window.onload = receberNovasLeituras;
+</script>

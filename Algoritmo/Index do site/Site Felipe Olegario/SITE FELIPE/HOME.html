@@ -29,8 +29,8 @@
         <section class="quem">
             <div class="opacidade">
                 <div class="container">
-                <h1 onclick="quem_somos()">Quem somos</h1>
-                <P id="somos"></P>
+                <h1>Quem somos</h1>
+                <P>A Algasensors é a empresa que veio para mudar o mercado de energia reutilizável e consequentemente mudar o mundo com a nossa tecnologia de controle de temperatura para o cultivo de mricroalgas!</P>
                 </div>
             </div>
         </section>
@@ -38,9 +38,12 @@
         <section class="sensores">
             <div class="listra">
                 <div class="container">
-                <h1 onclick="como_funciona()">Como funciona o nosso sistema</h1>
-                <p id="funciona"></p>
-                <img src="" id="como_funciona_img">
+                <h1>Como funciona o nosso sistema</h1>
+                <p id="funciona">O sensor escolhido foi o LM35 para a coleta de dados de temperatura no local do cultivo das microalgas.</p>
+                <br>
+                <button onclick="como_funciona1()" class="button_como_funciona">Saiba mais</button>
+
+                <img src="https://d229kd5ey79jzj.cloudfront.net/286/images/286_1_H.png" id="como_funciona_img">
                 </div>
             </div>
         </section>
@@ -48,8 +51,8 @@
         <section class="algas">
             <section class="opacidade2">
                 <div class="container">
-                    <h1 onclick="microalga()">O que são microalgas</h1>
-                    <p id="o_que_sao_microalgas"></p>
+                    <h1>O que são microalgas</h1>
+                    <p id="o_que_sao_microalgas">As microalgas são organismos vivos unicelulares que crescem tanto em água doce como em água salgada, o tamanho delas pode variar de alguns micrômetros porem são mais conhecidas por suas colônias e plantações de grandes dimensões. O estudo das microalgas se deve a três pilares principais: <span>biológico, ecológico e econômico</span>. Nos termos <span>biológicos</span>, o valor das microalgas reside na estruturação da atual atmosfera terrestre pela produção de maior parte do O₂ que chega a ser aproximadamente 55% de todo oxigênio terrestre. No termo <span>ecológico</span> as algas são responsáveis por ser a base de toda cadeia alimentar dos oceanos junto com plânctons e outros. Já a importância <span>econômica</span> é determinada pela quantidade de áreas de possível atuação dos derivados das algas, onde ela produz óleos de forma 17x mais eficiente que a soja, que são usados para produção de biodiesel, etanol e até bioquerosene utilizado em aviões, e sua biomassa pode ser utilizada para produção ração animal, suplemento alimentar, cosméticos, remédios, adubo e até plásticos biodegradáveis.</p>
                 </div>
             </section>
         </section>
@@ -75,14 +78,7 @@
 </body>
 </html>
 <script>
-    function quem_somos(){
-        somos.innerHTML='A Algasensors é a empresa que veio para mudar o mercado de energia reutilizável e consequentemente mudar o mundo com a nossa tecnologia de controle de temperatura para o cultivo de mricroalgas!'
-    }
-    function como_funciona(){
-        funciona.innerHTML='O sensor escolhido foi o LM35 para a coleta de dados de temperatura no local do cultivo das microalgas. A coleta de dados é realizada de acordo com a necessidade do cliente, mas deixamos pré-programado a atualização dos dados a cada uma hora. Em nosso sistema o usuário vai entrar com o seu login e senha e após a validação dos dados o usuário tem acesso a relatórios, gráficos, históricos de acesso, área de suporte entre outras funções.';
-        como_funciona_img.src='https://d229kd5ey79jzj.cloudfront.net/286/images/286_1_H.png'
-    }
-    function microalga(){
-    o_que_sao_microalgas.innerHTML="As microalgas são organismos vivos unicelulares que crescem tanto em água doce como em água salgada, o tamanho delas pode variar de alguns micrômetros porem são mais conhecidas por suas colônias e plantações de grandes dimensões. O estudo das microalgas se deve a três pilares principais: <span>biológico, ecológico e econômico</span>. Nos termos <span>biológicos</span>, o valor das microalgas reside na estruturação da atual atmosfera terrestre pela produção de maior parte do O₂ que chega a ser aproximadamente 55% de todo oxigênio terrestre. No termo <span>ecológico</span> as algas são responsáveis por ser a base de toda cadeia alimentar dos oceanos junto com plânctons e outros. Já a importância <span>econômica</span> é determinada pela quantidade de áreas de possível atuação dos derivados das algas, onde ela produz óleos de forma 17x mais eficiente que a soja, que são usados para produção de biodiesel, etanol e até bioquerosene utilizado em aviões, e sua biomassa pode ser utilizada para produção ração animal, suplemento alimentar, cosméticos, remédios, adubo e até plásticos biodegradáveis."
+    function como_funciona1(){
+        funciona.innerHTML='O sensor escolhido foi o LM35 para a coleta de dados de temperatura no local do cultivo das microalgas. A coleta de dados é realizada de acordo com a necessidade do cliente, mas deixamos pré-programado a atualização dos dados a cada uma hora. Em nosso sistema o usuário vai entrar com o seu login e senha e após a validação dos dados o usuário tem acesso a relatórios, gráficos, históricos de acesso, área de suporte entre outras funções.'
     }
 </script>
