@@ -43,27 +43,29 @@ body{
     color:rgb(192, 190, 190) ;
     transition: 0.2s;
 }
-.login{
+.user{
     float: right;
-    margin-top: -43px;
-}
-.login li{
-    float: left;
-    list-style: none;
-    margin: 5px;
+    margin-left: 200px;
+    margin-top: -40px;
     color: white;
-    transition: 0.2s;
+    margin-right: 50px; 
 }
-.login a{
-    transition: 0.2s;
-    text-decoration: none;
-    color: white;
-}
-.login a:hover{
-    color: rgb(192, 190, 190);
-    transition: 0.2s;
-}
+
+
+
+
 .div_grafico{
     margin-left: 20%;
     margin-top: 30px;
+}
+
+footer{
+    height: 20px;
+    background: #313131;
+    position: relative;
+    margin-top: 6%;
+    text-align: center;
+}
+footer span{
+    color: #888787;
 }
