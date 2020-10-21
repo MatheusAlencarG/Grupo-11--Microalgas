@@ -4,8 +4,8 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Gráfico de 1 linha com Chart.js</title>
-	<script src="../../../../dist/2.9.4/Chart.min.js"></script>
-	<script src="../../utils.js"></script>
+	<script src="https://www.chartjs.org/dist/2.9.3/Chart.min.js"></script>
+	<script src="https://www.chartjs.org/samples/latest/utils.js"></script>
 	<style>
 	canvas{
 		-moz-user-select: none;
@@ -75,8 +75,8 @@
 
 	// esse "sortearTemperatura()" será desnecessário quando usarmos o backend futuramente
 	function sortearTemperatura() {
-		var limiteMin = 20;
-		var limiteMax = 30;
+		var limiteMin = -10;
+		var limiteMax = 70;
 		var minimoAbsoluto = Math.abs(limiteMin);
 		return (Math.random() * (minimoAbsoluto+limiteMax) - minimoAbsoluto).toFixed(1);
 	}
@@ -90,27 +90,27 @@
 				leitura: sortearTemperatura()
 			},
 			{
-				momento: '00:04:52',
+				momento: '00:03:52',
 				leitura: sortearTemperatura()
 			},
 			{
-				momento: '00:05:02',
+				momento: '00:04:02',
 				leitura: sortearTemperatura()
 			},
 			{
-				momento: '00:06:12',
+				momento: '00:04:12',
 				leitura: sortearTemperatura()
 			},
 			{
-				momento: '00:07:22',
+				momento: '00:04:22',
 				leitura: sortearTemperatura()
 			},
 			{
-				momento: '00:08:32',
+				momento: '00:04:32',
 				leitura: sortearTemperatura()
 			},
 			{
-				momento: '00:09:42',
+				momento: '00:04:42',
 				leitura: sortearTemperatura()
 			}
 		];

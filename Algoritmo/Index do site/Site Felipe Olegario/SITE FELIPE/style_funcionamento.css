@@ -1,0 +1,58 @@
+body{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.navbar{
+    background: #313131;
+    height: 90px;
+    border-bottom: #42b72a 3px inset;
+}
+.container{
+    height: 90px;
+    width: 90%;
+    margin: auto;
+}
+.container img{
+    height: 90px;
+    float: left;
+}
+.container h2{
+    float: left;
+    letter-spacing: 1px;
+    color: white;
+    margin-left: 5px;
+    margin-top: 30px;
+}
+.menu{
+    float: right;
+    margin-right: 350px;
+    margin-top: 30px;
+}
+.menu li{
+    float: left;
+    list-style: none;
+    margin: 5px;
+    color: white;
+}
+.menu a{
+    transition: 0.2s;
+}
+.menu a:hover{
+    color:rgb(192, 190, 190) ;
+    transition: 0.2s;
+}
+.login{
+    float: right;
+    margin-top: -43px;
+}
+.login li{
+    float: left;
+    list-style: none;
+    margin: 5px;
+    color: white;
+    transition: 0.2s;
+}
+.login a:hover{
+    color: rgb(192, 190, 190);
+    transition: 0.2s;
+}

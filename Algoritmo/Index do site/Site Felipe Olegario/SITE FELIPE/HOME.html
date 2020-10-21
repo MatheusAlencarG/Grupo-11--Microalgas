@@ -14,7 +14,7 @@
                 <h2>ALGASENSORS</h2>
                 <ul class="menu">
                     <li style="color: rgb(192, 190, 190);">PAGINA INICIAL</li>
-                    <li>SIMULADOR</li>
+                    <li><a href="#simular">SIMULADOR</a></li>
                     <li><a href="./login.html">GRAFICOS</a></li>
                 </ul>
                 <ul class="login">
@@ -40,10 +40,8 @@
                 <div class="container">
                 <h1>Como funciona o nosso sistema</h1>
                 <p id="funciona">O sensor escolhido foi o LM35 para a coleta de dados de temperatura no local do cultivo das microalgas.</p>
-                <br>
-                <button onclick="como_funciona1()" class="button_como_funciona">Saiba mais</button>
-
-                <img src="https://d229kd5ey79jzj.cloudfront.net/286/images/286_1_H.png" id="como_funciona_img">
+                <br><br>
+                <button class="saiba_mais2"><a href="#">Saiba mais</a></button>
                 </div>
             </div>
         </section>
@@ -51,10 +49,28 @@
         <section class="algas">
             <section class="opacidade2">
                 <div class="container">
-                    <h1>O que são microalgas</h1>
-                    <p id="o_que_sao_microalgas">As microalgas são organismos vivos unicelulares que crescem tanto em água doce como em água salgada, o tamanho delas pode variar de alguns micrômetros porem são mais conhecidas por suas colônias e plantações de grandes dimensões. O estudo das microalgas se deve a três pilares principais: <span>biológico, ecológico e econômico</span>. Nos termos <span>biológicos</span>, o valor das microalgas reside na estruturação da atual atmosfera terrestre pela produção de maior parte do O₂ que chega a ser aproximadamente 55% de todo oxigênio terrestre. No termo <span>ecológico</span> as algas são responsáveis por ser a base de toda cadeia alimentar dos oceanos junto com plânctons e outros. Já a importância <span>econômica</span> é determinada pela quantidade de áreas de possível atuação dos derivados das algas, onde ela produz óleos de forma 17x mais eficiente que a soja, que são usados para produção de biodiesel, etanol e até bioquerosene utilizado em aviões, e sua biomassa pode ser utilizada para produção ração animal, suplemento alimentar, cosméticos, remédios, adubo e até plásticos biodegradáveis.</p>
+                    <h1 onclick="microalga()">O que são microalgas</h1>
+                    <p id="o_que_sao_microalgas">As microalgas são organismos vivos unicelulares que crescem tanto em água doce como em água salgada, o tamanho delas pode variar de alguns micrômetros porem são mais conhecidas por suas colônias e plantações de grandes dimensões.</p>
+                    <br><br>
+                    <button class="saiba_mais"><a href="#"> Saiba mais</a></button>
                 </div>
             </section>
+        </section>
+
+        <section>
+            <div class="simulador" id="simular">
+                <h1>Simule o lucro utilizando o nosso sistema</h1>
+                <div class="caixa">
+                    <br>
+                   <span>Informe a quantidade de hectares:</span>
+       <br>
+                       <input placeholder="Quantidade de Hectares" id="in_valor1" type="number" onchange="calcular()">
+       <br><br>
+                       <button onclick="calcular()">Calcular</button>
+       <br>
+                   <div id="resultado"></div>
+               </div>
+            </div>
         </section>
     </main>
     
@@ -78,7 +94,19 @@
 </body>
 </html>
 <script>
-    function como_funciona1(){
-        funciona.innerHTML='O sensor escolhido foi o LM35 para a coleta de dados de temperatura no local do cultivo das microalgas. A coleta de dados é realizada de acordo com a necessidade do cliente, mas deixamos pré-programado a atualização dos dados a cada uma hora. Em nosso sistema o usuário vai entrar com o seu login e senha e após a validação dos dados o usuário tem acesso a relatórios, gráficos, históricos de acesso, área de suporte entre outras funções.'
+    function como_funciona(){
+        funciona.innerHTML='O sensor escolhido foi o LM35 para a coleta de dados de temperatura no local do cultivo das microalgas. A coleta de dados é realizada de acordo com a necessidade do cliente, mas deixamos pré-programado a atualização dos dados a cada uma hora. Em nosso sistema o usuário vai entrar com o seu login e senha e após a validação dos dados o usuário tem acesso a relatórios, gráficos, históricos de acesso, área de suporte entre outras funções.';
     }
+    function calcular(){
+    var num = Number(in_valor1.value);
+    var soja =  872;  
+    var contasoja =  872 * num;
+    var conta = ((soja * 18) * num);
+    var diferenca = conta - contasoja;
+    
+    resultado.innerHTML = `<span style="color:white">Óleo de microalgas rende R$${conta.toFixed(2)} em ${num}HA<br><br>
+    Enquanto o Óleo de Soja rende R$${contasoja.toFixed(2)} em ${num}HA<br><br>
+    A diferença de lucro entre eles é R$${diferenca.toFixed(2)}</span>`;
+    resultado.style.display= 'block'
+}
 </script>
