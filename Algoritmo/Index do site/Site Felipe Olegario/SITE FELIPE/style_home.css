@@ -268,3 +268,8 @@ footer span{
     text-decoration: none;
     color: white;
 }
+
+.social:hover{
+    border-bottom: 1px solid white;
+    cursor: pointer;
+}
