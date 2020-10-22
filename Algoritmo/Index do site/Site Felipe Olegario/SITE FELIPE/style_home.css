@@ -5,7 +5,7 @@ body{
 .navbar{
     background: #313131;
     height: 90px;
-    border-bottom: #42b72a 3px inset;
+    border-bottom: #14d44d 3px inset;
 }
 .container{
     height: 90px;
@@ -25,7 +25,7 @@ body{
 }
 .menu{
     float: right;
-    margin-right: 300px;
+    margin-right: 350px;
     margin-top: 30px;
 }
 .menu li{
