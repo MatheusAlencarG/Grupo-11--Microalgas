@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <link rel="shortcut icon" href="imagens/logo.ico" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SOLUÇÃO - ALGASENSORS</title>
+    <link rel="stylesheet" href="style_solução.css">
+    <link rel="stylesheet" type="text/css" href="slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
+</head>
+
+<body>
+    <header>
+        <div class="navbar">
+            <div class="container">
+                <a href="./HOME.html"><img src="./imagens/logo.png"></a>
+                <h2>ALGASENSORS</h2>
+                <ul class="menu">
+                    <li><a href="HOME.html">PÁGINA INICIAL</a></li>
+                    <li><a  style="color :rgb(192, 190, 190)">SOLUÇÃO</a></li>
+                    <li><a href="MICROALGAS.HTML">MICROALGAS</a></li>
+                    <li><a href="./HOME.html #simular">SIMULADOR</a></li>
+                    <li><a href="dashboard.html">GRÁFICOS</a></li>
+                </ul>
+                <ul class="login">
+                    <li><a href="login.html">LOGIN</a></li>
+                    <li class="cadastro"><a href="cadastro.html">CADASTRAR</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="fundo">
+            <div class="opacidade3">
+                <h1>Como funciona a nossa solução</h1>
+            </div>
+        </div>
+        <div class="container">
+            <div class="texto">
+                <p>O sensor escolhido foi o LM35 para a coleta de dados de temperatura no local do cultivo das
+                    microalgas. A coleta de dados é realizada de acordo com a necessidade do cliente, mas deixamos
+                    pré-programado a atualização dos dados a cada uma hora. Em nosso sistema o usuário vai entrar com o
+                    seu login e senha e após a validação dos dados o usuário tem acesso a relatórios, gráficos,
+                    históricos de acesso, área de suporte entre outras funções.
+                </p>
+
+                <p>Nós então criamos uma solução para a parte de monitoramento da temperatura, com foco em baratear os
+                    custos desse processo e fazer com que seja atrativo o investimento nessa área.
+                    O processo de solução está organizado nas seguintes etapas: vamos mapear o local, criar o ambiente,
+                    instalar os nossos equipamentos e dar a interface para o usuário poder tomar decisões de acordo com
+                    as medições. As empresas de energia e combustível são nosso principal alvo de negócio.
+                </p>
+            </div>
+            <div class="slider">
+                <button onclick="esquerda()" class="button_slider_esquerda"><</button>
+                        <img src="./imagens microalgas/tanque.jpg" id="img_slider">
+                        <button onclick="direita()" class="button_slider_direita">></button>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+        <p>Contato</p>
+        <span>Telefone: (11)96335-3624 <br> contato.algasensors@gmail.com <br>Endereço: Rua Haddock lobo,1550, 05572120, São Paulo</span>
+        <div class="imagem">
+            <span>Redes sociais</span><br>
+            <a href="https://www.instagram.com/" target="_blank"><img src="./imagens/instagram.png" class="social" ></a>
+            <a href="https://www.facebook.com/" target="_blank"><img src="./imagens/facebook.png" class="social"></a>
+            <a href="https://mail.google.com/" target="_blank"><img src="./imagens/gmail.png" class="social"></a>
+            <a href="https://twitter.com/" target="_blank" ><img src="./imagens/TWITTER_icon-icons.com_65536.png" class="social"></a>           
+        </div>
+        <div class="bandtec">
+            <span class="span_footer">Developed by Algasensor in collaboration Bandtec.</span>
+        </div>
+        </div>
+</footer> 
+
+</body>
+
+</html>
+<script>
+    var click = 0;
+    function esquerda() {
+        click += 1;
+        if (click == 1) {
+            img_slider.src = './imagens microalgas/tanque2.jpg';
+        } else if (click == 2) {
+            img_slider.src = './imagens microalgas/tanque3.jpg';
+        } else if (click == 3) {
+            img_slider.src = './imagens microalgas/tanque4.jpg';
+        } else {
+            img_slider.src = './imagens microalgas/tanque.jpg';
+            click=0;
+        }
+    }
+
+    function direita() {
+        click -= 1;
+        if (click == 2) {
+            img_slider.src = './imagens microalgas/tanque3.jpg';
+        } else if (click == 1) {
+            img_slider.src = './imagens microalgas/tanque4.jpg';
+        } else if (click == 0) {
+            img_slider.src = './imagens microalgas/tanque.jpg';
+        } else {
+            img_slider.src = './imagens microalgas/tanque2.jpg';
+            click=3;
+        }
+    }
+</script>

@@ -1,0 +1,105 @@
+body{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.navbar{
+    background: #313131;
+    height: 90px;
+    border-bottom: #42b72a 3px inset;
+}
+.container{
+    height: 90px;
+    width: 90%;
+    margin: auto;
+}
+.container img{
+    height: 90px;
+    float: left;
+}
+.container h2{
+    float: left;
+    letter-spacing: 1px;
+    color: white;
+    margin-left: 5px;
+    margin-top: 30px;
+}
+.menu{
+    float: right;
+    margin-right: 300px;
+    margin-top: 30px;
+}
+.menu li{
+    float: left;
+    list-style: none;
+    margin: 5px;
+    color: white;
+}
+.menu a{
+    transition: 0.2s;
+}
+.menu a:hover{
+    color:rgb(192, 190, 190) ;
+    transition: 0.2s;
+}
+.login{
+    float: right;
+    margin-top: -43px;
+}
+.login li{
+    float: left;
+    list-style: none;
+    margin: 5px;
+    color: white;
+    transition: 0.2s;
+}
+.login a:hover{
+    color: rgb(192, 190, 190);
+    transition: 0.2s;
+}
+a {
+    color: white;
+    text-decoration: none;
+}
+
+
+footer{
+    height: 133px;
+    width: 100%;
+    background: #313131;
+    margin-top: 30px;
+}
+footer p{
+    padding-top: 20px;
+    margin: 0;
+    padding-bottom: 10px;
+    color: white;
+}
+footer span{
+    color: white;
+}
+.bandtec{
+    height: 30px;
+    width: 100%;
+    background: #313131;
+}
+.span_footer{
+    margin-left: 38%;
+    color: #888787;
+}
+.imagem{
+    float: right;
+    margin-top: -60px;
+}
+.imagem img{
+    height: 30px;
+    margin: 3px;
+}
+.navbar a{
+    text-decoration: none;
+    color: white;
+}
+
+.social:hover{
+    border-bottom: 1px solid white;
+    cursor: pointer;
+}

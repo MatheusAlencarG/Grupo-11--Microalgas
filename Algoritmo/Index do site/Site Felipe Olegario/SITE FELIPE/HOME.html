@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOME - ALGASENSORS</title> 
+    <link rel="stylesheet" href="style_home.css" />
+    <link rel="shortcut icon" href="imagens/logo.ico" />
+</head>
+<body>
+    
+    <header>
+        <div class="navbar">
+            <div class="container">
+                <img src="./imagens/logo.png">
+                <h2>ALGASENSORS</h2>
+                <ul class="menu">
+					<li><a style="color :rgb(192, 190, 190)";>PÁGINA INICIAL</a></li>
+                    <li><a href="solução.html">SOLUÇÃO</a></li>
+                    <li><a href="MICROALGAS.HTML">MICROALGAS</a></li>
+                    <li><a href="#simular">SIMULADOR</a></li>
+                    <li><a href="dashboard.html">GRÁFICOS</a></li>
+                </ul>
+        
+                <ul class="login">
+                    <li><a href="login.html">LOGIN</a></li>
+                    <li class="cadastro"><a href="cadastro.html">CADASTRAR</a></li>
+                </ul>
+            </div>
+        </div>
+	</header> 
+
+    <main>
+        <section class="quem">
+            <div class="opacidade">
+                <div class="container">
+                <h1>Quem somos</h1>
+                <P>A Algasensors é a empresa que veio para mudar o mercado de energia reutilizável e consequentemente mudar o mundo com a nossa tecnologia de controle de temperatura para o cultivo de mricroalgas!</P>
+                </div>
+            </div>
+        </section>
+
+        <section class="sensores" id="solucao">
+            <div class="listra">
+                <div class="container">
+                <h1 >Como funciona o nosso sistema</h1>
+                <p id="funciona">O sensor escolhido foi o LM35 para a coleta de dados de temperatura no local do cultivo das microalgas.</p>
+                <br><br>
+                <button class="saiba_mais2"><a href="solução.html">Saiba mais</a></button>
+                </div>
+            </div>
+        </section>
+        
+        <section class="algas" id="algas-sobre">
+            <section class="opacidade2">
+                <div class="container">
+                    <h1 onclick="microalga()">O que são microalgas</h1>
+                    <p id="o_que_sao_microalgas">As microalgas são organismos vivos unicelulares que crescem tanto em água doce como em água salgada, o tamanho delas pode variar de alguns micrômetros porem são mais conhecidas por suas colônias e plantações de grandes dimensões.</p>
+                    <br><br>
+                    <button class="saiba_mais"><a href="MICROALGAS.HTML"> Saiba mais</a></button>
+                </div>
+            </section>
+        </section>
+
+        <section>
+            <div class="simulador" id="simular">
+                <h1>Simule o lucro utilizando o nosso sistema</h1>
+                <div class="caixa">
+                    <br>
+                   <span>Informe a quantidade de hectares:</span>
+       <br>
+                       <input placeholder="Quantidade de Hectares" id="in_valor1" type="number" onchange="calcular()">
+       <br><br>
+                       <button onclick="calcular()">Calcular</button>
+       <br>
+                   <div id="resultado"></div>
+               </div>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+            <div class="container">
+            <p>Contato</p>
+            <span>Telefone: (11)96335-3624 <br> contato.algasensors@gmail.com <br>Endereço: Rua Radok lobo,1550, 05572120, São Paulo</span>
+            <div class="imagem">
+                <span>Redes sociais</span><br>
+                <a href="https://www.instagram.com/" target="_blank"><img src="./imagens/instagram.png" class="social" ></a>
+                <a href="https://www.facebook.com/" target="_blank"><img src="./imagens/facebook.png" class="social"></a>
+                <a href="https://mail.google.com/" target="_blank"><img src="./imagens/gmail.png" class="social"></a>
+                <a href="https://twitter.com/" target="_blank" ><img src="./imagens/TWITTER_icon-icons.com_65536.png" class="social"></a>           
+            </div>
+            <div class="bandtec">
+                <span class="span_footer">Developed by Algasensor in collaboration Bandtec.</span>
+            </div>
+            </div>
+    </footer> 
+</body>
+</html>
+<script>
+
+    function calcular(){
+    var num = Number(in_valor1.value);
+    var soja =  872;  
+    var contasoja =  872 * num;
+    var conta = ((soja * 18) * num);
+    var diferenca = conta - contasoja;
+    
+    resultado.innerHTML = `<span style="color:white">Óleo de microalgas rende R$${conta.toFixed(2)} em ${num}HA<br><br>
+    Enquanto o Óleo de Soja rende R$${contasoja.toFixed(2)} em ${num}HA<br><br>
+    A diferença de lucro entre eles é R$${diferenca.toFixed(2)}</span>`;
+    resultado.style.display= 'block'
+}
+</script>
