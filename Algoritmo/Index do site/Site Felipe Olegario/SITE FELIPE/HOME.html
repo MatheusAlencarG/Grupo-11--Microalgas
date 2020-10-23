@@ -3,20 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HOME</title>
-    <link rel="stylesheet" href="style_home.css">
+    <title>HOME - ALGASENSORS</title> 
+    <link rel="stylesheet" href="style_home.css" />
+    <link rel="shortcut icon" href="imagens/logo.ico" />
 </head>
 <body>
     <header>
         <div class="navbar">
             <div class="container">
-                <img src="./imagens/logo.png">
+                <a href="HOME.html"><img src="./imagens/logo.png"></a>
                 <h2>ALGASENSORS</h2>
                 <ul class="menu">
-                    <li style="color: rgb(192, 190, 190);">PAGINA INICIAL</li>
+                    <li>PÁGINA INICIAL</li> 
+                    <li><a href="solução.html">SOLUÇÃO</a></li>
+                    <li><a href="MICROALGAS.HTML">MICROALGAS</a></li>
                     <li><a href="#simular">SIMULADOR</a></li>
+<<<<<<< HEAD
                     <li><a href="./dastbord.html">GRAFICOS</a></li>
                 </ul>
+=======
+                    <li><a href="login.html">GRÁFICOS</a></li>
+                </ul> 
+>>>>>>> 112794578b88342d61fab6c0d54bce19a2900f7e
                 <ul class="login">
                     <li><a href="login.html">LOGIN</a></li>
                     <li class="cadastro"><a href="cadastro.html">CADASTRAR</a></li>
@@ -36,24 +44,24 @@
             </div>
         </section>
 
-        <section class="sensores">
+        <section class="sensores" id="solucao">
             <div class="listra">
                 <div class="container">
-                <h1>Como funciona o nosso sistema</h1>
+                <h1 >Como funciona o nosso sistema</h1>
                 <p id="funciona">O sensor escolhido foi o LM35 para a coleta de dados de temperatura no local do cultivo das microalgas.</p>
                 <br><br>
-                <button class="saiba_mais2"><a href="#">Saiba mais</a></button>
+                <button class="saiba_mais2"><a href="solução.html">Saiba mais</a></button>
                 </div>
             </div>
         </section>
         
-        <section class="algas">
+        <section class="algas" id="algas-sobre">
             <section class="opacidade2">
                 <div class="container">
                     <h1 onclick="microalga()">O que são microalgas</h1>
                     <p id="o_que_sao_microalgas">As microalgas são organismos vivos unicelulares que crescem tanto em água doce como em água salgada, o tamanho delas pode variar de alguns micrômetros porem são mais conhecidas por suas colônias e plantações de grandes dimensões.</p>
                     <br><br>
-                    <button class="saiba_mais"><a href="#"> Saiba mais</a></button>
+                    <button class="saiba_mais"><a href="MICROALGAS.HTML"> Saiba mais</a></button>
                 </div>
             </section>
         </section>
@@ -81,17 +89,16 @@
             <span>Telefone: (11)96335-3624 <br> contato.algasensors@gmail.com <br>Endereço: Rua Radok lobo,1550, 05572120, São Paulo</span>
             <div class="imagem">
                 <span>Redes sociais</span><br>
-                <img src="./imagens/instagram.png">
-                <img src="./imagens/facebook.png">
-                <img src="./imagens/gmail.png">
-                <img src="./imagens/TWITTER_icon-icons.com_65536.png" alt="">
+                <a href="https://www.instagram.com/" target="_blank"><img src="./imagens/instagram.png" class="social" ></a>
+                <a href="https://www.facebook.com/" target="_blank"><img src="./imagens/facebook.png" class="social"></a>
+                <a href="https://mail.google.com/" target="_blank"><img src="./imagens/gmail.png" class="social"></a>
+                <a href="https://twitter.com/" target="_blank" ><img src="./imagens/TWITTER_icon-icons.com_65536.png" class="social"></a>           
             </div>
             <div class="bandtec">
                 <span class="span_footer">Developed by Algasensor in collaboration Bandtec.</span>
             </div>
             </div>
-    </footer>
-    </div>  
+    </footer> 
 </body>
 </html>
 <script>

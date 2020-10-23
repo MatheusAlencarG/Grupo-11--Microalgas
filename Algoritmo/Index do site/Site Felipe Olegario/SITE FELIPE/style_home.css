@@ -5,7 +5,7 @@ body{
 .navbar{
     background: #313131;
     height: 90px;
-    border-bottom: #42b72a 3px inset;
+    border-bottom: #14d44d 3px inset;
 }
 .container{
     height: 90px;
@@ -25,7 +25,7 @@ body{
 }
 .menu{
     float: right;
-    margin-right: 350px;
+    margin-right: 300px;
     margin-top: 30px;
 }
 .menu li{
@@ -56,8 +56,6 @@ body{
     color: rgb(192, 190, 190);
     transition: 0.2s;
 }
-
-
 .quem{
     background-image: url(./imagens/edit.jpg);
     height: 400px;
@@ -267,4 +265,9 @@ footer span{
 .navbar a{
     text-decoration: none;
     color: white;
+}
+
+.social:hover{
+    border-bottom: 1px solid white;
+    cursor: pointer;
 }
