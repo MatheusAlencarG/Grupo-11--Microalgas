@@ -61,15 +61,16 @@ body{
     color: white;
 }
 
+
 .fundo{
     height: 200px;
     width: 100%;
-    background-image: url(./imagens_oceano/planta5.jpeg);
+    background-image: url(./imagens_oceano/planta\ 6.jpeg);
     background-size: cover;
     border-bottom: 3px solid #313131;
 }
 .opacidade3{
-    background: rgba(0, 0, 0, 0.041);
+    background: rgba(0, 0, 0, 0);
     height: 200px;
 }
 .fundo h1{
@@ -79,33 +80,65 @@ body{
     text-align: center;
     color: white;
 }
-
-
-.p1{
-    text-align: justify;
-    font-size: 20px;
-    margin-top: 25px;
-    width: 45%;
+.texto{
+    width: 600px;
     float: left;
 }
-
-.p2{
+.texto p{
     text-align: justify;
-    font-size: 20px;
+    font-size: 18px;
     margin-top: 25px;
-    width: 45%;
-    float: right;
 }
+/* .container {
+    display: flex;
+} */
 
-.quebra{
+.slider{
+    float: right;
+    margin-top: 25px;
+}
+#img_slider{
+    width: 480px;
+    height: 320px;
+    margin-right: 10px;
+    margin-left: 10px;
+    transition: 0.5s;
+    border-radius: 10px;
+}
+.button_slider_esquerda{
+    float: left;
+    margin-top: 140px;
+    background: #14d44d;
+    height: 30px;
+    width: 30px;
+    border-radius: 50px;
+    border: none;
+    color: white;
+    font-weight: bolder;
+    font-size: 18px;
+    outline: none;
+    cursor: pointer;
+}
+.button_slider_direita{
+    margin-top: 140px;
+    background: #14d44d;
+    height: 30px;
+    width: 30px;
+    border-radius: 50px;
+    border: none;
+    color: white;
+    font-weight: bolder;
+    font-size: 18px;
+    outline: none;
+    cursor: pointer;
+}
+.div_rodape{
     height: 100px;
     width: 100%;
-    background-image: url(./imagens_oceano/planta2.jpeg);
-    background-size: cover;
-    border-bottom: 3px solid #fff;
-    margin-top: 650px;
+    background-image: url(./imagens_oceano/planta\ 6.jpeg);
+    margin-top: 280px;
+    border-bottom: 3px white solid;
 }
-
 
 footer{
     height: 133px;
@@ -147,6 +180,3 @@ footer span{
     border-bottom: 1px solid white;
     cursor: pointer;
 }
-
-
-

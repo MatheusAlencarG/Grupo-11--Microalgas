@@ -61,16 +61,15 @@ body{
     color: white;
 }
 
-
 .fundo{
     height: 200px;
     width: 100%;
-    background-image: url(./imagens_oceano/gotas\ na\ planta.jpeg);
+    background-image: url(./imagens_oceano/planta2.jpeg);
     background-size: cover;
     border-bottom: 3px solid #313131;
 }
 .opacidade3{
-    background: rgba(0, 0, 0, 0.295);
+    background: rgba(0, 0, 0, 0.041);
     height: 200px;
 }
 .fundo h1{
@@ -80,65 +79,38 @@ body{
     text-align: center;
     color: white;
 }
-.texto{
-    width: 600px;
-    float: left;
-}
-.texto p{
-    text-align: justify;
-    font-size: 18px;
-    margin-top: 25px;
-}
-/* .container {
-    display: flex;
-} */
 
-.slider{
-    float: right;
+
+.p1{
+    text-align: justify;
+    font-size: 20px;
     margin-top: 25px;
-}
-#img_slider{
-    width: 480px;
-    height: 320px;
-    margin-right: 10px;
-    margin-left: 10px;
-    transition: 0.5s;
-    border-radius: 10px;
-}
-.button_slider_esquerda{
+    width: 45%;
     float: left;
-    margin-top: 140px;
-    background: #14d44d;
-    height: 30px;
-    width: 30px;
-    border-radius: 50px;
-    border: none;
-    color: white;
-    font-weight: bolder;
-    font-size: 18px;
-    outline: none;
-    cursor: pointer;
 }
-.button_slider_direita{
-    margin-top: 140px;
-    background: #14d44d;
-    height: 30px;
-    width: 30px;
-    border-radius: 50px;
-    border: none;
-    color: white;
-    font-weight: bolder;
-    font-size: 18px;
-    outline: none;
-    cursor: pointer;
+
+.p2{
+    text-align: justify;
+    font-size: 20px;
+    margin-top: 25px;
+    width: 45%;
+    float: right;
 }
+
+.quebra{
+    height: 100px;
+    width: 100%;
+    background-image: url(./imagens_oceano/planta2.jpeg);
+    background-size: cover;
+    border-bottom: 3px solid #fff;
+    margin-top: 650px;
+}
+
 
 footer{
     height: 133px;
     width: 100%;
     background: #313131;
-    margin-top: 200px;
-    margin-top: 280px;
 }
 footer p{
     padding-top: 20px;
@@ -175,3 +147,6 @@ footer span{
     border-bottom: 1px solid white;
     cursor: pointer;
 }
+
+
+
