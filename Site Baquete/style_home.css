@@ -1,0 +1,192 @@
+body{
+    margin: 0;
+    font-family:  Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.navbar{
+    background:#000000;
+    height: 80px;
+    width: 100%;
+    border-bottom: 2px solid #FDB927;
+    font-size: 20px;
+}
+.container{
+    background:#000000;
+    height: 80px;
+    width: 90%;
+    margin: auto;
+}
+.container img{
+    height: 60px;
+    float: left;
+    padding-top: 12px;
+}
+.container h1{
+    color: #FDB927;
+    margin: none;
+    float: left;
+    margin: 15px 0px 0px 10px;
+    font-size: 40px;
+}
+.ul_menu{
+    float: left;
+    list-style: none;
+    margin-top: 25px;
+    margin-left: 20px;
+}
+.ul_menu li{
+    float: left;
+    margin: 6px;
+    color: #FDB927;
+    margin-right: 20px;
+    transition: 0.2s;
+}
+.ul_menu li:hover{
+    transition: 0.1s;
+    border-bottom: #552583 3px solid;
+    /* color: #552583; */
+}
+.ul_login{
+    float: right;
+    list-style: none;
+    margin-top: 25px;
+}
+.ul_login li{
+    float: left;
+    margin: 6px;
+    color: #FDB927;
+}
+.campeao{
+    background-image: url(./imagens/campeao.webp);
+    height: 700px;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;   
+}
+
+
+.trofeis{
+    width: 100%;
+    height: 250px;
+    background-color: black;
+    border-bottom: #FDB927 2px solid;
+}
+.container2{
+    background:#000000;
+    height: 250px;
+    width: 90%;
+    margin: auto;
+    text-align: center;
+}
+
+.container2 img{
+    height: 91px;
+}
+.container2 span{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+#titulos{
+    color: #FDB927;
+    font-size: 50px;
+}
+
+.span_1949{
+    color: #FDB927;
+    font-size: 20px;
+    margin-left: 18px;
+    float: left;
+}
+.span_1950{
+    color: #FDB927;
+    font-size: 20px;
+    margin-left: 27px;
+    float: left;
+}
+.span_1952{
+    color: #FDB927;
+    font-size: 20px;
+    margin-left: 28px;
+    float: left;
+}
+.span_1953{
+    color: #FDB927;
+    font-size: 20px;
+    margin-left: 29px;
+    float: left;
+}
+.span_1980{
+    color: #FDB927;
+    font-size: 20px;
+    margin-left: 30px;
+    float: left;
+}
+.span_2004{
+    color: #FDB927;
+    font-size: 20px;
+    margin-left: 26px;
+    float: left;
+} 
+
+
+.elenco{
+    width: 100%;
+    height: 900px;
+    background-color: black;
+    margin: auto;
+    border-bottom: #FDB927 solid 2px;
+}
+.container3{
+    background:#000000;
+    height: 900px;
+    width: 90%;
+    margin: auto;
+    text-align: center;
+}
+.atletas{
+    text-align: center;
+    margin-left: 45px;
+}
+.container3 img{
+    height: 200px;
+    margin-top: 20px;
+}
+.container3 span{
+    color: #FDB927;
+    font-size: 25px;
+}
+.container3 div{
+    float: left;
+    text-align: center;
+}
+
+.rodape{
+    height: 140px;
+    width: 100%;
+    background: black;
+}
+.container4{
+    height: 100px;
+    width: 90%;
+    margin: auto;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    background: black;
+}
+.valores{
+    width: 450px;
+    text-align: justify;
+    margin: 0;
+    color: white;
+    padding-top: 10px;
+}
+.redes{
+    text-align: right;
+    margin-top: -44px;
+}
+.redes img {
+    height: 40px;
+}
+.rodape p {
+    color: white    ;
+}
+
+ 
